@@ -1,0 +1,26 @@
+{
+  "name": "cli_utilities",
+  "version": "1.0.0",
+  "description": "CLI's using yargs",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf bin && tsc ",
+    "dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts"
+  },
+  "bin": {
+    "word": "./bin/index.js"
+  },
+  "keywords": ["cli"],
+  "author": "Himanshu Verma",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/yargs": "^17.0.24"
+  }
+}
